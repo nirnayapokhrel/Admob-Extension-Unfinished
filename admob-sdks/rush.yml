@@ -1,0 +1,36 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: AdmobSdks
+description: Extension component for AdmobSdks. Created using Rush.
+
+version:
+  number: auto
+  name: '2'
+
+authors:
+  - oseamiya
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+
+deps:
+  - consent-library-1.0.6.jar
+  - gson-2.8.4.jar
+  - play-services-ads-21.1.0.jar
+  - play-services-ads-base-21.1.0.jar
+  - play-services-ads-identifier-18.0.0.jar
+
+

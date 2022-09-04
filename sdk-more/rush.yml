@@ -1,0 +1,40 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: SdkMore
+description: Extension component for SdkMore. Created using Rush.
+
+version:
+  number: auto
+  name: '1'
+
+authors:
+  - oseamiya
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+  # Extension assets.
+  # other:
+  #   - my_awesome_asset.anything
+
+deps:
+  - play-services-basement-18.0.0.jar
+  - play-services-measurement-base-21.1.0.jar
+  - play-services-measurement-sdk-api-20.1.2.jar
+  - play-services-tasks-18.0.1.jar
+  - user-messaging-platform-2.0.0.jar
+  - play-services-ads-lite-21.1.0.jar
+  - play-services-appset-16.0.1.jar
+  - appcompat-v7-26.1.0.jar
